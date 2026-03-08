@@ -6,8 +6,7 @@ const scoldings = [
     "Arey! Ye 'Nahi' wala button kharab hai, 'Haan' try kro! 💖",
     "Bohot badmash ho gyi ho... Chup chaap Haan pe click kro! 😂",
     "Maan jao na... Kitni baar Nahi bologe? 🥺",
-    "Seriously? Ab toh Haan bol do! 😤❤️",
-    "Nahi click krne se kuch nahi hoga, sirf daant milegi! 😂"
+    "Seriously? Ab toh Haan bol do! 😤❤️"
 ];
 
 function showSection(sectionId) {
@@ -17,7 +16,7 @@ function showSection(sectionId) {
     window.scrollTo(0, 0);
 }
 
-// Background Hearts Generator
+// Background Hearts
 setInterval(() => {
     const heart = document.createElement('div');
     heart.classList.add('heart');
@@ -32,7 +31,6 @@ setInterval(() => {
 
 const noBtn = document.getElementById('no-btn');
 
-// This ONLY scolds. It does NOT hide or move the button.
 noBtn.addEventListener('click', () => {
     const randomMsg = scoldings[Math.floor(Math.random() * scoldings.length)];
     alert(randomMsg);
